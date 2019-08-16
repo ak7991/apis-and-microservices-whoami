@@ -1,7 +1,7 @@
-TIMESTAMP API
-=============
+REQUEST HEADER PARSER API
+==========================
 
-Delivers a timestamp as a JSON. This is just an api. It was developed by me while learning from FreeCodeCamp (FCC).
+Delivers device info as a JSON. This is just an api. It was developed by me while learning from FreeCodeCamp (FCC).
 
 
 Contents
@@ -19,7 +19,4 @@ On the back-end,
 Notes on Usage
 ---------------
 
-Just send a get request to [project URL]/api/<date Input>
-Where:
-- <date Input> is a Long depicting seconds passed from Jan 1, 1970
-- OR <date Input> is a String in the format <yyyy-mm-dd> ONLY (no other format supported)
+Just send a get request to [project URL]/api/whoami
