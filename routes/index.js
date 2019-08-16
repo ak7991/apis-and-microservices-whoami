@@ -5,6 +5,7 @@ var router = express.Router();
 
 router.get('/whoami', (req, res, next) => {
 
+	const getClientInfo = require('../js/header-parser').getClientInfo;
 	// Respond with a JSON with device Info.
 	res.send(getClientInfo(req));
 	res.end();
