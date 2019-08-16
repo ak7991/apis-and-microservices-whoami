@@ -7,8 +7,7 @@ app.use(express.static('public'));
 // include ALL routes
 const routes = require('./routes/index');
 app.use('/api', routes);
-
-// http://expressjs.com/en/starter/basic-routing.html
+]
 app.get('/', function(request, response) {
   response.send('please append /api/whoami in URL to get IP');
 });

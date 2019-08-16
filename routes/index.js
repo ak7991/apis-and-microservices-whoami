@@ -4,17 +4,14 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/whoami', (req, res, next) => {
-	const getClientIp = req.params.date;
 
-	// Respond with a JSON parseable string with date values.
-	res.send(getClientIp(req));
+	// Respond with a JSON with device Info.
+	res.send(getClientInfo(req));
 	res.end();
 });
 
 router.get('/', (req, res, next) => {
-
-	// Respond with a JSON parseable string with date values.
-	res.send(getClientIp(req));
+	res.send("append /whoami to the url to get device info from request header");
 	res.end();
 });
 
